@@ -1,0 +1,6 @@
+rome/
+models/
+__pycache__/
+*.csv
+*.txt
+*.ipynb
