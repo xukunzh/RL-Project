@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\csa_class\5180\project\RL-Project-main\RL-Project-main\visualize_all.py", line 13, in <module>
+    import matplotlib
+ModuleNotFoundError: No module named 'matplotlib'
+ERROR conda.cli.main_run:execute(142): `conda run python visualize_all.py viz_output/` failed. (See above for error)

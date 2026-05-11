@@ -1,6 +1,8 @@
-rome/
-models/
+# Python
 __pycache__/
-*.csv
-*.txt
-*.ipynb
+*.py[cod]
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db

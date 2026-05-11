@@ -6,12 +6,29 @@ class XingLoss:
         # Store edges as a long tensor [num_edges, 2]
         nodes = list(G.nodes())
         edges = [[nodes.index(i), nodes.index(j)] for i,j in G.edges]
-        self.edges = torch.tensor(edges, dtype=torch.long)
         if device is None:
             device = torch.device("cpu")
         self.device = device
         self.soft = soft
         self.sharpness = sharpness
+        self.edges = torch.tensor(edges, dtype=torch.long, device=device)
+
+        # Precompute filtered edge pairs once (coords-independent)
+        num_edges = self.edges.shape[0]
+        if num_edges >= 2:
+            idx_i, idx_j = torch.triu_indices(num_edges, num_edges, offset=1,
+                                               device=device)
+            ei = self.edges[idx_i]
+            ej = self.edges[idx_j]
+            no_shared = ~(
+                (ei[:, 0] == ej[:, 0]) | (ei[:, 0] == ej[:, 1]) |
+                (ei[:, 1] == ej[:, 0]) | (ei[:, 1] == ej[:, 1])
+            )
+            self._ei = ei[no_shared]
+            self._ej = ej[no_shared]
+        else:
+            self._ei = torch.zeros(0, 2, dtype=torch.long, device=device)
+            self._ej = torch.zeros(0, 2, dtype=torch.long, device=device)
         
     @staticmethod
     def cross_2d(v, u):
@@ -98,29 +115,14 @@ class XingLoss:
         """
         coords: Tensor of shape [num_nodes, >=2], returns scalar total crossings
         """
-        num_edges = self.edges.shape[0]
-        idx_i, idx_j = torch.triu_indices(num_edges, num_edges, offset=1)
-        edge_i = self.edges[idx_i]
-        edge_j = self.edges[idx_j]
-
-        # Remove pairs sharing a node
-        no_shared_nodes = ~(
-            (edge_i[:, 0] == edge_j[:, 0]) |
-            (edge_i[:, 0] == edge_j[:, 1]) |
-            (edge_i[:, 1] == edge_j[:, 0]) |
-            (edge_i[:, 1] == edge_j[:, 1])
-        )
-        edge_i = edge_i[no_shared_nodes]
-        edge_j = edge_j[no_shared_nodes]
-
-        if edge_i.shape[0] == 0:
+        if self._ei.shape[0] == 0:
             return torch.tensor(0.0, device=coords.device)
 
-        # Get endpoints
-        edge_1_start_pos = coords[edge_i[:, 0], :2]
-        edge_1_end_pos   = coords[edge_i[:, 1], :2]
-        edge_2_start_pos = coords[edge_j[:, 0], :2]
-        edge_2_end_pos   = coords[edge_j[:, 1], :2]
+        # Use precomputed filtered edge pairs (no recomputation needed)
+        edge_1_start_pos = coords[self._ei[:, 0], :2]
+        edge_1_end_pos   = coords[self._ei[:, 1], :2]
+        edge_2_start_pos = coords[self._ej[:, 0], :2]
+        edge_2_end_pos   = coords[self._ej[:, 1], :2]
 
         crossings = self.edges_intersect(edge_1_start_pos, edge_1_end_pos,
                                          edge_2_start_pos, edge_2_end_pos)

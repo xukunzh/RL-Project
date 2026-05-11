@@ -1,0 +1,257 @@
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Training GATv2 + PPO for 5000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+     0    30    15       1       1    +0.0%    +0.0%
+    50    30    17       6       6    +0.0%   +14.9%
+   100    30    12       5       2   +60.0%   +10.2%
+   150    30    16      17      15   +11.8%   +17.6%
+   300    30    21       2       1   +50.0%    +9.8%
+   350    30    13       3       2   +33.3%    +9.4%
+   400    30    25      24      21   +12.5%   +10.7%
+   450    30    19       5       4   +20.0%   +11.9%
+   550    30    29       6       5   +16.7%   +20.5%
+
+=== Restarting from checkpoint, N_EPOCHS=2000, SAVE_EVERY=100 ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+
+=== Optimized: XingLoss cached, MAX_STEPS=60, reuse crossings ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+     0    30    21       3       3    +0.0%    +0.0%
+
+=== Final optimized run: adaptive MAX_STEPS, cached XingLoss ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+    50    30    25       8       7   +12.5%    +8.5%
+   100    30    15       8       6   +25.0%    +7.1%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck100.pt]
+   150    30    22       6       5   +16.7%    +6.4%
+   300    40    16       1       1    +0.0%    +7.2%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck300.pt]
+   350    40    23       4       4    +0.0%    +7.8%
+   400    40    30       7       7    +0.0%    +8.2%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck400.pt]
+   450    40    11       3       3    +0.0%    +7.2%
+   500    40    32      13      13    +0.0%    +4.2%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck500.pt]
+   550    40    14       1       1    +0.0%   +11.5%
+
+=== Restarting from ck500 ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Resumed from D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck500.pt (epoch 500)
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+   500    40    13       1       1    +0.0%    +0.0%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck500.pt]
+   600    55    12       1       1    +0.0%    +8.1%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck600.pt]
+   650    55    16       3       3    +0.0%   +10.7%
+   700    55    24       2       1   +50.0%    +9.7%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck700.pt]
+   750    55    11       3       2   +33.3%   +11.5%
+   850    55    15      11       9   +18.2%    +8.4%
+   900    55    16       4       2   +50.0%    +7.9%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck900.pt]
+   950    55    18       5       5    +0.0%   +11.0%
+  1000    75    16       4       3   +25.0%    +9.9%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1000.pt]
+  1050    75    24       1       1    +0.0%   +14.0%
+
+=== Restarting from ck1000 ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Resumed from D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck900.pt (epoch 900)
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+   900    55    21       3       3    +0.0%    +0.0%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck900.pt]
+
+=== Restart: neato timeout + heartbeat + exit log ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Resumed from D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck900.pt (epoch 900)
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+
+=== Restart: fixed ckpt sort, resuming from ck1000 ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Resumed from D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1000.pt (epoch 1000)
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+  1000    75    14       1       1    +0.0%    +0.0%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1000.pt]
+  [alive] epoch=1012  19:12:45
+  [alive] epoch=1024  19:13:45
+  [alive] epoch=1040  19:14:45
+  [alive] epoch=1049  19:15:45
+  1050    75    19       2       2    +0.0%   +11.4%
+  [alive] epoch=1061  19:16:45
+  [alive] epoch=1073  19:17:45
+  [alive] epoch=1083  19:18:45
+  [alive] epoch=1095  19:19:45
+  1100    75    14       2       2    +0.0%   +13.6%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1100.pt]
+  [alive] epoch=1108  19:20:45
+  [alive] epoch=1122  19:21:45
+  [alive] epoch=1135  19:22:45
+  [alive] epoch=1148  19:23:45
+  1150    75    28       1       1    +0.0%   +15.4%
+  [alive] epoch=1158  19:24:45
+  [alive] epoch=1171  19:25:45
+  [alive] epoch=1185  19:26:45
+  [alive] epoch=1195  19:27:45
+  [alive] epoch=1210  19:28:45
+  [alive] epoch=1223  19:29:45
+  [alive] epoch=1237  19:30:45
+  [alive] epoch=1255  19:31:45
+  [alive] epoch=1266  19:32:45
+  [alive] epoch=1279  19:33:45
+  [alive] epoch=1293  19:34:45
+  1300    75    41      12       9   +25.0%   +13.9%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1300.pt]
+  [alive] epoch=1307  19:35:45
+D:\csa_class\5180\project\RL-Project-main\RL-Project-main\train_gnn_ppo.py:353: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1858.)
+  if advantages.std() > 1e-6:
+  [alive] epoch=1323  19:36:45
+  [alive] epoch=1342  19:37:45
+  1350    75    46      13      12    +7.7%   +14.4%
+  [alive] epoch=1351  19:38:45
+  [alive] epoch=1365  19:39:45
+  [alive] epoch=1379  19:40:45
+  [alive] epoch=1391  19:41:45
+  [alive] epoch=1404  19:42:45
+  [alive] epoch=1417  19:43:45
+  [alive] epoch=1431  19:44:45
+  [alive] epoch=1441  19:45:45
+  1450    75    32      20      18   +10.0%    +7.0%
+  [alive] epoch=1453  19:46:45
+  [alive] epoch=1466  19:47:45
+  [alive] epoch=1479  19:48:45
+  [alive] epoch=1493  19:49:45
+  1500   100    31      14      14    +0.0%   +12.6%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1500.pt]
+  [alive] epoch=1507  19:50:45
+  [alive] epoch=1520  19:51:45
+  [alive] epoch=1532  19:52:45
+  [alive] epoch=1546  19:53:45
+  [alive] epoch=1560  19:54:45
+  [alive] epoch=1575  19:55:45
+
+=== Restart from ck1500 ===
+Using GPU: NVIDIA GeForce RTX 2060 with Max-Q Design (6143 MB VRAM)
+Loading training graphs...
+Loaded 2000 graphs (n ≤ 100, idx ≤ 9999)
+Pre-computing adjacency matrices and XingLoss objects (device=cuda)...
+Done. 2000 graphs ready.
+
+Resumed from D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1500.pt (epoch 1500)
+Training GATv2 + PPO for 2000 epochs (k_nodes=2, K_EPOCHS=4)...
+ Epoch  MaxN     n    init    best   improv    rec50
+--------------------------------------------------------------
+  1500   100    40      29      27    +6.9%    +6.9%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1500.pt]
+  [alive] epoch=1511  20:08:27
+  [alive] epoch=1523  20:09:27
+  [alive] epoch=1535  20:10:27
+  [alive] epoch=1547  20:11:27
+  1550   100    16       1       1    +0.0%    +8.7%
+  [alive] epoch=1559  20:12:27
+  [alive] epoch=1574  20:13:27
+  [alive] epoch=1582  20:14:27
+  [alive] epoch=1593  20:15:27
+  1600   100    16       2       2    +0.0%    +7.4%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1600.pt]
+  [alive] epoch=1604  20:16:27
+  [alive] epoch=1618  20:17:27
+  [alive] epoch=1631  20:18:27
+  [alive] epoch=1643  20:19:27
+  1650   100    19       2       2    +0.0%   +12.7%
+  [alive] epoch=1658  20:20:27
+  [alive] epoch=1672  20:21:27
+  [alive] epoch=1684  20:22:27
+  [alive] epoch=1696  20:23:27
+  1700   100    24       2       2    +0.0%   +12.8%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1700.pt]
+  [alive] epoch=1708  20:24:27
+  [alive] epoch=1719  20:25:27
+  [alive] epoch=1731  20:26:27
+  [alive] epoch=1745  20:27:27
+  1750   100    13       1       1    +0.0%    +7.1%
+  [alive] epoch=1758  20:28:27
+  [alive] epoch=1775  20:29:27
+  [alive] epoch=1788  20:30:27
+  1800   100    40      15      15    +0.0%    +3.9%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1800.pt]
+  [alive] epoch=1801  20:31:27
+  [alive] epoch=1813  20:32:27
+  [alive] epoch=1827  20:33:27
+  [alive] epoch=1838  20:34:27
+  1850   100    25       4       4    +0.0%    +9.6%
+  [alive] epoch=1853  20:35:27
+  [alive] epoch=1868  20:36:27
+  [alive] epoch=1881  20:37:27
+  [alive] epoch=1894  20:38:27
+  1900   100    12       1       0  +100.0%    +7.6%
+  [checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1900.pt]
+  [alive] epoch=1905  20:39:27
+  [alive] epoch=1921  20:40:27
+  [alive] epoch=1936  20:41:27
+  [alive] epoch=1947  20:42:27
+  [alive] epoch=1960  20:43:28
+  [alive] epoch=1971  20:44:28
+  [alive] epoch=1985  20:45:28
+  [alive] epoch=1996  20:46:28
+  [EXIT] stopped at epoch=1999  20:46:34
+  [EXIT] emergency checkpoint → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_ck1999_exit.pt
+
+Final model saved → D:\csa_class\5180\project\RL-Project-main\RL-Project-main\models\gnn_ppo_final.pt

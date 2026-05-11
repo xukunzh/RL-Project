@@ -1,0 +1,131 @@
+Test graphs found: 101
+GNN-RL model available:    True
+GATv2-PPO model available: True
+
+Column notes:
+  PPO  — GATv2-PPO quick eval (N_TRIALS=5, MAX_STEPS=300); used for fair comparison with other baselines.
+  PPO* — GATv2-PPO submitted coords (MAX_TRIALS=50, MAX_STEPS=500 + SA post-processing refinement);
+          these are the actual values in coords_submission/ evaluated against neato.
+
+Graph                                  N  neato   sfdp   SmGD     SA    MLP    GNN    PPO   PPO*
+-------------------------------------------------------------------------------------------------
+grafo10000.38.graphml                  38    14     9    13    10     8     9     7     7
+grafo10001.32.graphml                  32     0     3     0     0     0     0     0     0
+grafo10002.40.graphml                  40     4     4     2     4     4     4     4     3
+grafo10003.40.graphml                  40    17     8    10     9    10     9    10     9
+grafo10004.32.graphml                  32     4     4     5     3     3     3     3     2
+grafo10005.39.graphml                  39    15    15    17    14    12    11     9    11
+grafo10006.98.graphml                  98   136   100   133   127   115   115   106   109
+grafo10007.31.graphml                  31     2     0     0     2     2     1     1     1
+grafo10008.42.graphml                  42    30    28    29    25    25    24    22    19
+grafo10009.31.graphml                  31     2     2     2     2     2     2     2     2
+grafo10010.39.graphml                  39    11    16    12    10    10     9    10     9
+grafo10011.31.graphml                  31     2     1     2     2     2     1     1     1
+grafo10012.40.graphml                  40    12    12    13    11     9     9     9     8
+grafo10013.31.graphml                  31     2     1     1     1     2     1     1     1
+grafo10014.39.graphml                  39    13    18    17    12    12    11    12    11
+grafo10015.39.graphml                  39     3     5     5     3     3     3     3     2
+grafo10016.39.graphml                  39    20    16    14    19    18    15    16    15
+grafo10017.96.graphml                  96   113   118   110   111   101   101    99    97
+grafo10018.31.graphml                  31     4     3     5     4     4     4     3     3
+grafo10019.38.graphml                  38     2     2     3     2     2     1     2     1
+grafo10020.38.graphml                  38    17    24    21    16    14    14    14    13
+grafo10021.39.graphml                  39    10     9     8     8     6     8     6     6
+grafo10022.31.graphml                  31     2     1     1     1     2     1     1     1
+grafo10023.39.graphml                  39     9    14     9     9     9     8     8     8
+grafo10024.32.graphml                  32     5     3     5     5     5     3     4     3
+grafo10025.31.graphml                  31     4     6     5     4     3     3     3     3
+grafo10026.32.graphml                  32     4     5     6     3     3     3     3     3
+grafo10027.38.graphml                  38    14     9    10    13    12    11    12     9
+grafo10028.96.graphml                  96   104   111   106    95    93    89    86    80
+grafo10029.40.graphml                  40    18    17    16    17    14    14    14    13
+grafo10030.38.graphml                  38    14    13    14    13    12    11    11    11
+grafo10031.38.graphml                  38    12    13    14    10    10    10     9     9
+grafo10032.38.graphml                  38     9     9     9     6     7     7     7     6
+grafo10033.31.graphml                  31     2     1     2     1     2     1     1     1
+grafo10034.40.graphml                  40    18    13    16    16    16    16    15    15
+grafo10035.38.graphml                  38     7     6     6     6     4     5     4     4
+grafo10036.31.graphml                  31     2     1     1     1     1     1     1     1
+grafo10037.39.graphml                  39    14    14    12    10     9     8    10    10
+grafo10038.38.graphml                  38     7     6     8     6     6     5     5     5
+grafo10039.98.graphml                  98    80    65    72    71    69    66    60    58
+grafo10040.32.graphml                  32     0     0     0     0     0     0     0     0
+grafo10041.41.graphml                  41    19    11    16    16    14    12    11    12
+grafo10042.39.graphml                  39    14    11    17    14    11    10    10    11
+grafo10043.32.graphml                  32     8     6     5     7     8     7     6     7
+grafo10044.38.graphml                  38    10     9    11    10     9     6     6     5
+grafo10045.38.graphml                  38     9    10     8     8     8     7     7     7
+grafo10046.40.graphml                  40     7    11     8     7     6     6     6     6
+grafo10047.32.graphml                  32     4     2     4     3     2     2     2     1
+grafo10048.32.graphml                  32     5     8     2     5     5     4     4     4
+grafo10049.39.graphml                  39     9     9     8     8     9     7     7     6
+grafo10050.97.graphml                  97   117   105   118   113   101    99    99    92
+grafo10051.30.graphml                  30     4     3     3     3     3     3     3     2
+grafo10052.32.graphml                  32     0     0     0     0     0     0     0     0
+grafo10053.32.graphml                  32     4     4     7     4     3     3     3     3
+grafo10054.40.graphml                  40    13    14    20    12    11    11    10    11
+grafo10055.40.graphml                  40    23    17    14    20    18    17    16    14
+grafo10056.31.graphml                  31     2     1     5     1     1     1     1     1
+grafo10057.40.graphml                  40    39    33    32    38    34    33    33    30
+grafo10058.32.graphml                  32     3    10     4     3     3     3     3     3
+grafo10059.32.graphml                  32     3     3     3     3     3     3     2     2
+grafo10060.90.graphml                  90    50    48    54    47    43    42    42    40
+grafo10061.99.graphml                  99   103    93    83    99    95    91    92    84
+grafo10062.39.graphml                  39     6     5     4     6     5     3     4     4
+grafo10063.31.graphml                  31     2     1     4     1     1     1     2     1
+grafo10064.39.graphml                  39    26    27    27    23    21    19    18    17
+grafo10065.32.graphml                  32     3     3     6     3     3     3     3     2
+grafo10066.40.graphml                  40    19    23    22    15    15    15    13    13
+grafo10067.41.graphml                  41     5     1     2     5     5     4     4     4
+grafo10068.31.graphml                  31     2     1     2     1     2     1     1     1
+grafo10069.40.graphml                  40    14    17    10    12    10     9     9    10
+grafo10070.32.graphml                  32     1     5     1     1     1     1     1     1
+grafo10071.40.graphml                  40    11    16    17    11     9     9     9     9
+grafo10072.97.graphml                  97   110    95   118   107    96    92    86    85
+grafo10074.90.graphml                  90   153   141   130   143   134   125   125   117
+grafo10075.31.graphml                  31     1     2     2     1     1     1     1     1
+grafo10076.90.graphml                  90   141   130   126   131   124   118   113   117
+grafo10077.31.graphml                  31     2     1     1     1     2     1     1     1
+grafo10078.40.graphml                  40     9    10    14     9     8     8     8     7
+grafo10079.41.graphml                  41    25    22    24    20    19    18    18    18
+grafo10080.38.graphml                  38    13     8    10    12    10    11     9    10
+grafo10081.34.graphml                  34     9    10     7     8     7     6     6     5
+grafo10082.98.graphml                  98    67    49    64    61    60    60    57    53
+grafo10083.38.graphml                  38    11    18    10    10     9     8     9     7
+grafo10084.97.graphml                  97   182   184   191   181   168   164   162   154
+grafo10085.35.graphml                  35     7     5     4     7     4     5     4     3
+grafo10086.34.graphml                  34     1     1     1     0     0     0     0     0
+grafo10087.39.graphml                  39    12    10    11    10     8     7     7     8
+grafo10088.39.graphml                  39    17    16    13    14    14    14    14    14
+grafo10089.37.graphml                  37    12    19    12    11    10     8     9     7
+grafo10090.97.graphml                  97    30    35    31    30    25    25    23    23
+grafo10091.96.graphml                  96    72    70    67    62    63    60    59    54
+grafo10092.97.graphml                  97    91   121    95    91    81    80    81    77
+grafo10093.98.graphml                  98   109   117   112   106   100    93    97    95
+grafo10095.93.graphml                  93    53    50    61    52    50    49    45    42
+grafo10096.95.graphml                  95   103    81    92    97    93    89    90    79
+grafo10097.95.graphml                  95    47    51    47    46    41    39    37    34
+grafo10098.95.graphml                  95   104   102   112   101    94    94    93    90
+grafo10099.94.graphml                  94   149   179   165   141   137   133   133   124
+grafo10100.99.graphml                  99   104   102    90   101    87    87    86    82
+grafo10101.92.graphml                  92   102   106   109    97    93    83    83    82
+grafo10102.97.graphml                  97    53    58    60    52    48    41    42    42
+
+=================================================================================================
+Total graphs: 101
+
+Evaluation metric (official formula):
+  mean[ (ours_i - neato_i) / max(ours_i, neato_i) ]  over all test graphs
+  Negative = better than neato baseline.
+
+Method        Avg Xings   Mean Rel Improvement
+-------------------------------------------------------------------------------------------------
+neato             30.51             (baseline)
+sfdp              29.75              -5.36%
+SmGD              30.00              -3.12%
+SA                28.54             -12.04%
+MLP               26.59             -15.49%
+GNN               25.43             -23.29%
+PPO               24.94             -23.86%   (quick eval: N_TRIALS=5, MAX_STEPS=300)
+PPO (submitted)   23.80             -29.79%   (submission coords: MAX_TRIALS=50, MAX_STEPS=500, SA post-processing)
+=================================================================================================

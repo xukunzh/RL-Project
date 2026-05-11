@@ -1,0 +1,118 @@
+Test graphs found: 99
+GNN model available: True
+
+Graph                                  N  neato   sfdp   SmGD     SA    MLP    GNN
+--------------------------------------------------------------------------------
+grafo10000.38.graphml                 38     14      9     13     12      9      9
+grafo10001.32.graphml                 32      0      3      0      0      0      0
+grafo10002.40.graphml                 40      4      4      2      4      4      3
+grafo10003.40.graphml                 40     17      8     10     11     11      9
+grafo10004.32.graphml                 32      4      4      5      3      3      2
+grafo10005.39.graphml                 39     15     15     17     15     11     10
+grafo10006.98.graphml                 98    136    100    133    130    120    110
+grafo10007.31.graphml                 31      2      0      0      1      2      2
+grafo10008.42.graphml                 42     30     28     29     23     21     23
+grafo10009.31.graphml                 31      2      2      2      2      2      2
+grafo10010.39.graphml                 39     11     16     12     10     10      8
+grafo10011.31.graphml                 31      2      1      2      1      2      1
+grafo10012.40.graphml                 40     12     12     13     11      9      9
+grafo10013.31.graphml                 31      2      1      1      1      1      1
+grafo10014.39.graphml                 39     13     18     17     13     11     11
+grafo10015.39.graphml                 39      3      5      5      3      3      3
+grafo10016.39.graphml                 39     20     16     14     20     18     16
+grafo10017.96.graphml                 96    113    118    110    110    100     99
+grafo10018.31.graphml                 31      4      3      5      4      4      4
+grafo10019.38.graphml                 38      2      2      3      2      1      1
+grafo10020.38.graphml                 38     17     24     21     17     13     15
+grafo10021.39.graphml                 39     10      9      8      7      6      7
+grafo10022.31.graphml                 31      2      1      1      2      1      1
+grafo10023.39.graphml                 39      9     14      9      8      8      8
+grafo10024.32.graphml                 32      5      3      5      5      5      4
+grafo10025.31.graphml                 31      4      6      5      3      3      3
+grafo10026.32.graphml                 32      4      5      6      3      3      3
+grafo10027.38.graphml                 38     14      9     10     12     12     12
+grafo10028.96.graphml                 96    104    111    106     96     91     87
+grafo10029.40.graphml                 40     18     17     16     18     14     14
+grafo10030.38.graphml                 38     14     13     14     12     12     11
+grafo10031.38.graphml                 38     12     13     14     10     10     10
+grafo10032.38.graphml                 38      9      9      9      6      7      6
+grafo10033.31.graphml                 31      2      1      2      1      1      1
+grafo10034.40.graphml                 40     18     13     16     16     16     15
+grafo10035.38.graphml                 38      7      6      6      5      5      5
+grafo10036.31.graphml                 31      2      1      1      2      1      1
+grafo10037.39.graphml                 39     14     14     12     12      9      9
+grafo10038.38.graphml                 38      7      6      8      6      6      5
+grafo10039.98.graphml                 98     80     65     72     70     67     60
+grafo10040.32.graphml                 32      0      0      0      0      0      0
+grafo10041.41.graphml                 41     19     11     16     17     14     12
+grafo10042.39.graphml                 39     14     11     17     13     12     11
+grafo10043.32.graphml                 32      8      6      5      7      8      8
+grafo10044.38.graphml                 38     10      9     11      7      7      7
+grafo10045.38.graphml                 38      9     10      8      8      7      7
+grafo10046.40.graphml                 40      7     11      8      7      7      6
+grafo10047.32.graphml                 32      4      2      4      3      3      2
+grafo10048.32.graphml                 32      5      8      2      4      5      4
+grafo10049.39.graphml                 39      9      9      8      8      8      8
+grafo10050.97.graphml                 97    117    105    118    112    102    102
+grafo10051.30.graphml                 30      4      3      3      3      3      3
+grafo10052.32.graphml                 32      0      0      0      0      0      0
+grafo10053.32.graphml                 32      4      4      7      4      3      3
+grafo10054.40.graphml                 40     13     14     20     13     12     10
+grafo10055.40.graphml                 40     23     17     14     22     17     17
+grafo10056.31.graphml                 31      2      1      5      1      2      1
+grafo10057.40.graphml                 40     39     33     32     39     34     32
+grafo10058.32.graphml                 32      3     10      4      3      3      3
+grafo10059.32.graphml                 32      3      3      3      3      3      2
+grafo10060.90.graphml                 90     50     48     54     50     42     41
+grafo10061.99.graphml                 99    103     93     83     98     94     88
+grafo10062.39.graphml                 39      6      5      4      5      5      3
+grafo10063.31.graphml                 31      2      1      4      2      1      1
+grafo10064.39.graphml                 39     26     27     27     23     20     19
+grafo10065.32.graphml                 32      3      3      6      3      3      3
+grafo10066.40.graphml                 40     19     23     22     18     14     15
+grafo10067.41.graphml                 41      5      1      2      4      5      3
+grafo10068.31.graphml                 31      2      1      2      1      1      1
+grafo10069.40.graphml                 40     14     17     10     11     11      7
+grafo10070.32.graphml                 32      1      5      1      1      1      1
+grafo10071.40.graphml                 40     11     16     17     11      8      8
+grafo10072.97.graphml                 97    110     95    118    106     94     93
+grafo10074.90.graphml                 90    153    141    130    142    136    126
+grafo10075.31.graphml                 31      1      2      2      1      1      1
+grafo10076.90.graphml                 90    141    130    126    135    122    117
+grafo10077.31.graphml                 31      2      1      1      1      2      1
+grafo10078.40.graphml                 40      9     10     14      9      8      8
+grafo10079.41.graphml                 41     25     22     24     23     19     16
+grafo10080.38.graphml                 38     13      8     10     12     10     10
+grafo10081.34.graphml                 34      9     10      7      7      7      7
+grafo10082.98.graphml                 98     67     49     64     63     61     60
+grafo10083.38.graphml                 38     11     18     10     10      9      8
+grafo10084.97.graphml                 97    182    184    191    178    167    162
+grafo10085.35.graphml                 35      7      5      4      3      4      5
+grafo10086.34.graphml                 34      1      1      1      1      0      0
+grafo10087.39.graphml                 39     12     10     11      9      8      7
+grafo10088.39.graphml                 39     17     16     13     15     14     15
+grafo10089.37.graphml                 37     12     19     12     11      9      8
+grafo10090.97.graphml                 97     30     35     31     28     26     25
+grafo10091.96.graphml                 96     72     70     67     66     62     59
+grafo10092.97.graphml                 97     91    121     95     91     83     79
+grafo10093.98.graphml                 98    109    117    112    105    101     97
+grafo10095.93.graphml                 93     53     50     61     51     46     48
+grafo10096.95.graphml                 95    103     81     92     97     92     90
+grafo10097.95.graphml                 95     47     51     47     46     40     40
+grafo10098.95.graphml                 95    104    102    112    103     96     92
+grafo10099.94.graphml                 94    149    179    165    145    138    128
+grafo10100.99.graphml                 99    104    102     90     98     87     85
+
+================================================================================
+Saved: D:\csa_class\5180\project\RL-Project-main\RL-Project-main\eval_full.csv
+
+Method      Avg Xings    vs neato (↓ better)
+----------------------------------------------
+neato           29.57
+sfdp            28.70  -5.59%
+SmartGD         28.90  -3.37%
+SA              27.72  -11.96%
+RL-MLP          25.55  -18.01%
+GNN-RL          24.39  -24.03%
+
+Done.
